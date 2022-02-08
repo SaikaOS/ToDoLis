@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(8, 7, 74, 1);
+}
+
+button {
+    border: 0;
+    background: 0;
+}
+
+li {
+    list-style: none;
+    background-color: #3d3d3b;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 90vh;
+}
+
+.title_div {
+    padding: 10px;
+}
+
+.title_div_text {
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.info {
+    background-color: white;
+    min-height: 70vh;
+    width: 40vw;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 40vw;
+}
+
+.todo_type {
+    padding: 10px;
+    font-size: 1.3rem;
+    width: 30vw;
+    color: white;
+    background: rgba(8, 7, 74, 1);
+    border-radius: 27px;
+    border: none;
+}
+
+.todo_type:active {
+    border: none;
+}
+
+.todo_type:focus {
+    border: none;
+}
+
+::placeholder {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: .7;
+    color: white;
+}
+
+.todo_btn {
+    background: rgba(8, 7, 74, 1);
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.todo_btn svg {
+    margin: 0 auto;
+    color: white;
+}
+
+.right {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.list li {
+    padding: 5px;
+    width: 29.6vw;
+    background: rgba(8, 7, 74, 1);
+    border-radius: 10px;
+}
+
+.remove_btn {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.delete {
+    padding: 5px;
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+.delete:hover {
+    opacity: 0.7;
+}
+
+.nonee {
+    display: none;
+}
+
+@keyframes animX {
+    0% {
+        margin-left: 40%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+/* Mediq Quieries */
+
+@media screen and (max-width: 768px) {
+    ::placeholder {
+        font-size: 8px;
+        padding: 5px;
+    }
+    .todo_type {
+        padding: 3px;
+    }
+    .todo_btn {
+        padding: 7px;
+    }
+    .todo_btn svg {
+        height: 1em;
+        width: 1em;
+    }
+    .list {
+    }
+    .list li {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+}
